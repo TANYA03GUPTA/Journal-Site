@@ -1,0 +1,27 @@
+<%- include("partials/header"); -%>
+<div class="Home-container">
+  <div class="home">
+    <h1>Home</h1>
+    <p>
+      Welcome! Below, you'll find a gateway to your journaling adventures, where
+      every entry is a step toward self-discovery and expression. To add more
+      entries, venture to "Compose"; for insights and tools to enrich your
+      journey, explore "Resources". For a glimpse into our story and mission,
+      visit "About Us". Welcome to a world of reflection, creativity, and
+      growth.
+    </p>
+    <div class="posts-style">
+      <% posts.forEach(function(post){ %>
+
+      <h2><%=post.title%></h2>
+
+      <p>
+        <%=post.content.substring(0, 250) + " ..."%>
+        <a href="/posts/<%=post.title%>">Read More</a>
+      </p>
+
+      <% }) %>
+    </div>
+  </div>
+</div>
+<%- include("partials/footer"); -%>
