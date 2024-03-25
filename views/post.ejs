@@ -4,6 +4,14 @@
   <br />
   <br />
   <p><%=content%></p>
+<div>
+    <form
+      action="/posts/<%= encodeURIComponent(title) %>?_method=DELETE"
+      method="POST"
+    >
+      <button type="submit" class="btn-dlt">Delete</button>
+    </form>
+  </div>
 </div>
 
 <%- include("partials/footer"); -%>
