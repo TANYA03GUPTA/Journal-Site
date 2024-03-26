@@ -24,7 +24,7 @@ app.use(methodOverride("_method"));
 
 //mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
 mongoose.connect(
-  "mongodb+srv://TanyaGupta:<password>@cluster0.lycpt7g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+  "mongodb+srv://TanyaGupta:Tanya2023@cluster0.lycpt7g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
   { useNewUrlParser: true }
 );
 const db = mongoose.connection;
